@@ -1,0 +1,72 @@
+
+
+<html>
+<head>	
+	<title>Homepage</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		.hide{
+			display: none;	
+		}
+		.button{
+			background-color: grey;
+			text-decoration: unset;
+			padding: 5px 22px;
+			border-radius: 6px;
+		}
+		</style>
+</head>
+
+<body>
+	<div id="nav_button" class="container">
+		<a id ="button-add" href="javascript:;">Add New Data</a><br/><br/>
+	</div>
+	<div id="add_container" class="container hide">
+		
+			<form action="?action=testFunction" method="post" name="form1">
+				<table width="25%" border="0">
+					<tr> 
+						<td>Name</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+					<tr> 
+						<td>Age</td>
+						<td><input type="text" name="age"></td>
+					</tr>
+					<tr> 
+						<td>Team</td>
+						<td><input type="text" name="team"></td>
+					</tr>
+					<tr> 
+						<td><a class="button " href="javascript:;" id="back" >Back</button></td>
+						<td><input class="" type="submit" name="testFunction" value="Add"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	<div id="list_container" class="">
+		<table width='80%' border=0>
+		<tr bgcolor='#CCCCCC'>
+			<td>Name</td>
+			<td>Age</td>
+			<td>Email</td>
+			<td>Update</td>
+		</tr>
+		<tr><td>2121</td><td>2121</td><td>2121</td><td><a href="edit.php?id=18">Edit</a> | <a href="delete.php?id=18" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>ss</td><td>0</td><td>ss</td><td><a href="edit.php?id=17">Edit</a> | <a href="delete.php?id=17" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>erere</td><td>0</td><td>rerere</td><td><a href="edit.php?id=16">Edit</a> | <a href="delete.php?id=16" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>1</td><td>22</td><td>22</td><td><a href="edit.php?id=15">Edit</a> | <a href="delete.php?id=15" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>77</td><td>77</td><td>77</td><td><a href="edit.php?id=14">Edit</a> | <a href="delete.php?id=14" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>00</td><td>0</td><td>00</td><td><a href="edit.php?id=11">Edit</a> | <a href="delete.php?id=11" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>Ketketted</td><td>43</td><td>daniel.vasas@t-online.hu</td><td><a href="edit.php?id=8">Edit</a> | <a href="delete.php?id=8" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>Egyketted</td><td>11</td><td>fdsds</td><td><a href="edit.php?id=7">Edit</a> | <a href="delete.php?id=7" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>Egyketted</td><td>11</td><td>fdsds</td><td><a href="edit.php?id=6">Edit</a> | <a href="delete.php?id=6" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>gfdgd</td><td>0</td><td>gfdgd</td><td><a href="edit.php?id=5">Edit</a> | <a href="delete.php?id=5" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>hgfhf</td><td>54</td><td>gfdgdfgd</td><td><a href="edit.php?id=4">Edit</a> | <a href="delete.php?id=4" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>gfdgd</td><td>0</td><td>gfdgd</td><td><a href="edit.php?id=3">Edit</a> | <a href="delete.php?id=3" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>fdsfs</td><td>65464</td><td>gfdgdfgdhh</td><td><a href="edit.php?id=2">Edit</a> | <a href="delete.php?id=2" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td><tr><td>FASZOM2</td><td>5434</td><td>szep text</td><td><a href="edit.php?id=1">Edit</a> | <a href="delete.php?id=1" onClick="return confirm('Are you sure you want to delete?')">Delete</a></td>		</table>
+	</div>
+	
+	
+	
+</body>
+
+
+<script>
+
+$("#button-add, #back").click(function(){
+	$(".container").toggle();
+});
+
+</script>
+
+
+</html>
